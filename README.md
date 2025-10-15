@@ -32,17 +32,3 @@ The program supports **two modes**:
 ## Goal
 
 This project is a simple **simulation** of how an operating system could manage file storage, focusing on allocation, deletion, and defragmentation — all implemented in **x86 Assembly**.
-
----
-
-## How to Build and Run
-
-### Requirements
-- **NASM** (Netwide Assembler)  
-- **LD** or another x86 linker  
-- Optional: **QEMU** or **DOSBox** to test the binary
-
-### Build
-```bash
-nasm -f elf32 storage_manager.asm -o storage_manager.o
-ld -m elf_i386 -o storage_manager storage_manager.o
